@@ -1,0 +1,14 @@
+#less{}
+body{padding-top:60px;font-family:"Microsoft YaHei","Microsoft JhengHei",STHeiti,MingLiu;}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:0;font-weight:normal;}
+.fClear{clear:both;}
+.fRight{float:right;}
+.fLeft{float:left;}
+ul{list-style-type:none;margin:0;padding:0;}
+div#header ul#user-links{float:right;color:white;}div#header ul#user-links a:link{color:#999;}
+div#header ul#user-links a:hover{color:white;}
+div#header div.msg-box{position:absolute;top:0;left:30%;width:40%;}
+div.msg-box div.alert{display:none;}div.msg-box div.alert:nth-child(1){display:block;}
+div.box-white{background-color:#ffffff;border:1px solid #d6d6d6;margin-bottom:20px;padding:10px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;box-shadow:0 1px 2px rgba(0, 0, 0, 0.075);-moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.075);-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.075);}div.box-white div.card-header{padding-left:20px;padding-bottom:15px;margin-top:16px;position:relative;}
+div.box-white p{word-break:break-all;}
+footer{border-top:1px solid #ddd;padding-top:20px;text-align:center;}

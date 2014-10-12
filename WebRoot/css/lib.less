@@ -1,0 +1,99 @@
+#import-less-file > .nothisclass();	//防止自动编译同名css,对库文件来说不需要
+/*	common less lib 
+	-------------------------------------*/
+#less {
+	.border-radius (@radius: 5px) {
+		-webkit-border-radius: @radius;
+		-moz-border-radius: @radius;
+		border-radius: @radius;
+	}
+
+	.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
+	  box-shadow: @arguments;
+	  -moz-box-shadow: @arguments;
+	  -webkit-box-shadow: @arguments;
+	}
+
+	.position (topLeft,@type: relative ,@top,@left) {
+		position: @type;
+		top: @top;
+		left: @left;
+	}
+	.position (topRight,@type: relative ,@top,@right) {
+		position: @type;
+		top: @top;
+		right: @right;
+	}
+	.position (bottomLeft,@type: relative ,@bottom,@left) {
+		position: @type;
+		left: @left;
+		bottom: @bottom;
+	}
+	.position (bottomRight,@type: relative ,@bottom,@right) {
+		position: @type;
+		right: @right;
+		bottom: @bottom;
+	}
+	.position (moveUp,@top) {
+		position: relative;
+		top: @top;
+	}
+	.position (moveDown,@bottom) {
+		position: relative;
+		bottom: @bottom;
+	}
+	.position (moveLeft,@left) {
+		position: relative;
+		left: @left;
+	}
+	.position (moveRight,@right) {
+		position: relative;
+		right: @right;
+	}
+	/*
+	.position (top,@type: relative ,@top: 0px,@left 0px,@right: 0px) {
+		position: @type;
+		top: @top;
+		left: @left;
+		right: @right;
+	}
+	.position (bottom,@type: relative ,@bottom: 0px,@left: 0px,@right: 0px) {
+		position: @type;
+		left: @left;
+		right: @right;
+		bottom: @bottom;
+	}
+	.position (left,@type: relative ,@top: 0px,@bottom: 0px,@left 0px) {
+		position: @type;
+		top: @top;
+		left: @left;
+		bottom: @bottom;
+	}
+	.position (right,@type: relative ,@top: 0px,@bottom: 0px,@right: 0px) {
+		position: @type;
+		top: @top;
+		right: @right;
+		bottom: @bottom;
+	}*/
+	.position (all,@type: relative ,@top: 0px,@bottom: 0px,@left: 0px,@right: 0px) {
+		position: @type;
+		top: @top;
+		left: @left;
+		right: @right;
+		bottom: @bottom;
+	}
+	.linear-gradient (@deg,@start,@startPre,@end,@endPre) {
+		background: @start; // Old browsers
+		background: -moz-linear-gradient(@deg,  @start @startPre, @end @endPre); // FF3.6+
+		background: -webkit-linear-gradient(@deg,  @start @startPre,@end @endPre); // Chrome10+,Safari5.1+
+		background: -o-linear-gradient(@deg,  @start @startPre,@end @endPre); // Opera 11.10+
+		background: -ms-linear-gradient(@deg,  @start @startPre,@end @endPre); // IE10+
+		background: linear-gradient(@deg,  @start @startPre,@end @endPre); // W3C
+	}
+	.transition (@what: all,@time: 0) {
+		-moz-transition: @what @time;
+		-webkit-transition: @what @time;
+		-o-transition: @what @time;
+		transition: @what @time;
+	}
+}

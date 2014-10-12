@@ -1,0 +1,81 @@
+@import "lib.less";
+
+body {
+	padding-top: 60px;
+	font-family: "Microsoft YaHei","Microsoft JhengHei",STHeiti,MingLiu;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 0;
+	font-weight: normal;
+}
+
+.fClear {
+	clear: both;
+}
+
+.fRight {
+	float: right;
+}
+
+.fLeft {
+	float: left;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* 通用组件样式
+ ---------------------------------------------------------------------- */
+div#header {
+	ul#user-links {
+		float: right;
+		color: white;
+
+		a {
+			&:link { color: #999; }
+			&:hover { color: white; }
+		}
+	}
+	div.msg-box {
+		#less > .position(topLeft,absolute,0,30%);
+		width: 40%;
+	}
+}
+
+div.msg-box {
+	div.alert {
+		display: none;
+		&:nth-child(1) {
+			display: block;
+		}
+	}
+}
+
+div.box-white {
+	background-color: hsl(0, 100%, 100%);
+	border: 1px solid hsl(0, 0%, 84%);
+	margin-bottom: 20px;
+	padding: 10px;
+	#less > .border-radius(6px);
+	#less > .box-shadow(0,1px,2px,hsla(0, 0%, 0%, .075));
+
+	div.card-header {
+		padding-left: 20px;
+		padding-bottom: 15px;
+		margin-top: 16px;
+		position: relative; /* ???? */
+	}
+	p {
+		word-break: break-all;
+	}
+}
+footer {
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+	text-align: center;
+}
+#import-less-file{.nothisclass() {}}
